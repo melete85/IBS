@@ -5007,17 +5007,22 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+  color: #E0FFFF;
+  background-image: url("CIMG1018.jpg");
+
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
+  text-align: right;
+  margin-right: 10px;
 }
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
+  text-align: right;
+  margin-right: 10px;
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
