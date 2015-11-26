@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Julia Ackermann - Wikisuche</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
+    <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href="carousel.css" rel="stylesheet" type='text/css'>
+    <link href="css/design.css" rel="stylesheet" type='text/css'>
   </head>
 
-  <body>
-    <h1>Wikipedia-Suche</h1>
-    <a href="http://de.wikipedia.org" target="_blank" name="Wikipedia">
-    <img src="Banner_fuettern_468x60_border.png" alt="Wikipedia. Die freie Enzyklop&aumldie. F&umlttern erbeten" border="0" align="middle" width= 468px height= 60px /></a>
-    <form name="search" method="post" action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
-      <div align="left">
-        <input aria-label="Suchfeld" type="text" name="search" placeholder="Suchbegriff" size= 62px />
-        <br />
-        <input role="button" type="submit" name="go" value="Artikelsuche" />
-        <input role="button" type="submit" name="fulltext" value="Volltextsuche" />
+  <body data-target=".navbar-fixed-top">
+
+    <nav class="navbar navbar-style navbar-fixed-top" role="Navigation">
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html#top">Startseite</a></li>
+          <li><a href="index.html#ich">Über mich</a></li>
+          <li><a href="index.html#code">Codeacademy</a><li>
+          <li><a href="mistudium.html">Mein Studium</a></li>
+          <li><a href="wikisuche.html">Wikipedia-Suche</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+        </ul>
       </div>
-    </form>
+    </nav>
+
+    <div class="container content-section text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1>Wikipedia-Suche</h1>
+          <a href="http://de.wikipedia.org" target="_blank" name="Wikipedia">
+          <img src="Banner_fuettern_468x60_border.png" alt="Wikipedia. Die freie Enzyklop&aumldie. F&umlttern erbeten" border="0" align="middle" width= 468px height= 60px /></a>
+
+          <form name="search" method="post" action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
+            <div align="left">
+              <input aria-label="Suchfeld" type="text" name="search" placeholder="Suchbegriff" size= 50px />
+              <input class="btn btn-default btn-style" role="button" type="submit" name="go" value="Artikelsuche" />
+              <input class="btn btn-default btn-style" role="button" type="submit" name="fulltext" value="Volltextsuche" />
+            </div>
+          </form>
 
     <a href="http://wave.webaim.org/report#/juliaa.cloudcontrolled.com/wikisuche" title="Explanation of Level Triple-A Conformance">
     <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AAA" alt="Level Triple-A conformance icon, W3C-WAI Web Content Accessibility Guidelines 1.0"></a>
-    <br />
-    <a href="index.html" role="button">Startseite</a>
 
   </body>
 </html>

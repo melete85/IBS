@@ -1,0 +1,72 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  color: #66CDAA;
+}
+
+.navbar-style {
+  background-color: #000;
+  color: #66CDAA;
+  border-color: #66CDAA;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #66CDAA;
+}
+
+.jumbo {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 300px 0;
+  color: #fff;
+  background: url("../img/255H.jpg") no-repeat center;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.jumboMI {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 300px 0;
+  color: #fff;
+  background: url("../img/120H.jpg") no-repeat center;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.text-left {
+  font-family: 'Montserrat';
+}
+
+.header {
+  font-size: 60px;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+.para {
+  padding-left: 15px;
+  font-size: 40px;
+}
+
+.content-section {
+  padding-top: 250px;
+}
+
+.btn-style {
+  color: white;
+  background-color: black;
+  border-color: #66CDAA;
+}

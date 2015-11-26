@@ -8,7 +8,7 @@
     <title>Julia Ackermann</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
     <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
@@ -17,28 +17,42 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link href="carousel.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="carousel.css" rel="stylesheet" type='text/css'>
+    <link href="css/design.css" rel="stylesheet" type='text/css'>
 
   </head>
 
-  <body>
-    <ul class="nav nav-pills">
-      <li><a href="index.html">Startseite</a></li>
-      <li class="active"><a href="mistudium.html">Mein Studium</a></li>
-      <li><a href="wikisuche.html">Wikipedia-Suche</a></li>
-      <li><a href="impressum.html">Impressum</a></li>
-    </ul>
+  <body data-target=".navbar-fixed-top">
 
-    <div class="jumbotron">
-      <h1>Medizinische Informatik</h1>
-      <p>Meine absolvierten Module</p>
+    <nav class="navbar navbar-style navbar-fixed-top" role="Navigation">
+
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html#top">Startseite</a></li>
+            <li><a href="index.html#ich">Über mich</a></li>
+            <li><a href="index.html#code">Codeacademy</a><li>
+            <li><a href="mistudium.html">Mein Studium</a></li>
+            <li><a href="wikisuche.html">Wikipedia-Suche</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+
+      </div>
+    </nav>
+
+    <div class="jumboMI">
+      <div class="text-left">
+        <h1 class="header">Medizinische Informatik</h1>
+        <p class="para">Meine absolvierten Module</p>
+      </div>
     </div>
 
-    <div class="container marketing">
-
+    <div class="container marketing content-section">
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="CIMG0462.JPG" alt="" width="140" height="140">
+          <span class="fa fa-ambulance fa-5x"></span>
           <h2>1. Semester</h2>
           <p>Objektorientierte Programmierung</p>
           <p>Grundlagen der Informatik</p>
@@ -49,7 +63,7 @@
         </div>
 
         <div class="col-lg-4">
-          <img class="img-circle" src="CIMG0533.jpg" alt="" width="140" height="140">
+          <span class="fa fa-stethoscope fa-5x"></span>
           <h2>2. Semester</h2>
           <p>Programmierung interaktiver Systeme</p>
           <p>Algorithmen und Datenstrukturen</p>
@@ -60,7 +74,7 @@
         </div>
 
         <div class="col-lg-4">
-          <img class="img-circle" src="CIMG0553.jpg" alt="" width="140" height="140">
+          <span class="fa fa-heartbeat fa-5x"></span>
           <h2>3. Semester</h2>
           <p>Medizintechnik</p>
           <p>Informationssysteme im Gesundheitswesen</p>
@@ -70,10 +84,12 @@
         </div>
 
       </div>
+    </div>
 
+    <div class="container marketing content-section">
     <div class="row">
       <div class="col-lg-4">
-        <img class="img-circle" src="" alt="" width="140" height="140">
+        <span class="fa fa-medkit fa-5x"></span>
         <h2>[aktuell:] 4. Semester</h2>
         <p>Betriebssysteme und Rechnernetze</p>
         <p>Softwaretechnik-Projekt</p>
@@ -81,7 +97,7 @@
       </div>
 
       <div class="col-lg-4">
-        <img class="img-circle" src="" alt="" width="140" height="140">
+        <span class="fa fa-heart-o fa-5x"></span>
         <h2>Wahlpflichtmodule</h2>
         <p>Einsatz von RFID im Gesundheitswesen</p>
         <p>[aktuell:] PACS/IT in der Radiologie</p>
@@ -89,3 +105,4 @@
         <p>[aktuell:] Geschäftsprozessmodellierung und <br>-implementierung am Beispiel SAP</p>
       </div>
     </div>
+</div>

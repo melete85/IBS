@@ -8,7 +8,7 @@
     <title>Julia Ackermann</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
     <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
@@ -17,33 +17,66 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link href="carousel.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href="carousel.css" rel="stylesheet" type='text/css'>
+    <link href="css/design.css" rel="stylesheet" type='text/css'>
 
   </head>
 
-  <body>
-    <ul class="nav nav-pills">
-      <li class="active"><a href="index.html">Startseite</a></li>
-      <li><a href="mistudium.html">Mein Studium</a></li>
-      <li><a href="wikisuche.html">Wikipedia-Suche</a></li>
-      <li><a href="impressum.html">Impressum</a></li>
-    </ul>
+  <body data-target=".navbar-fixed-top">
 
-    <div class="jumbotron">
-      <h1>Medizinische Informatik</h1>
-      <p>Julia Ackermann</p>
+    <nav class="navbar navbar-style navbar-fixed-top" role="Navigation">
+
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html#top">Startseite</a></li>
+            <li><a href="index.html#ich">Über mich</a></li>
+            <li><a href="index.html#code">Codeacademy</a><li>
+            <li><a href="mistudium.html">Mein Studium</a></li>
+            <li><a href="wikisuche.html">Wikipedia-Suche</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+
+      </div>
+    </nav>
+
+  <section id="top">
+    <div class="jumbo">
+      <div class="text-left">
+        <h1 class="header">Medizinische Informatik</h1>
+        <p class="para">Julia Ackermann</p>
+      </div>
     </div>
+  </section>
 
-    <div class="container marketing">
+  <section id="ich" class="container content-section text-center">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>Über mich und diese Seite</h2>
+        <p>Im Rahmen des Moduls "Internetbasierte Systeme" habe ich diese Seite erstellt, um den bisherigen Verlauf meines Studiums darzustellen. Und natürlich um das Gelernte in Sachen HTML/CSS umzusetzen!</p>
+      </div>
+    </div>
+  </section>
 
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="icon.png" alt="Codecademy Logo" width="140" height="140">
-          <h2>Codecademy Profil</h2>
-          <p>Link zum absolvierten HTML/CSS-Online-Praktikum</p>
-          <p><a class="btn btn-default" href="http://www.codecademy.com/melete85#completed" role="button">Beweise es &raquo;</a></p>
+  <section id="code" class="container content-section text-center">
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <img class="img-circle" src="icon.png" alt="Codecademy Logo" width="140" height="140">
+            <h2>Codecademy Profil</h2>
+            <p>Link zum absolvierten HTML/CSS-Online-Praktikum (u.a.)</p>
+            <p><a class="btn btn-default btn-style" href="http://www.codecademy.com/melete85#completed" role="button">Beweise es &raquo;</a></p>
+          </div>
         </div>
+      </div>
+  </section>
 
+  <footer>
+    <div class="container content-section text-center">
+      <p>Copyright &copy Julia Ackermann 2015</p>
+    </div>
+  </footer>
 
     <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
