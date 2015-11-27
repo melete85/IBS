@@ -61,7 +61,7 @@ a {
   font-size: 40px;
 }
 
-.content-section {
+.content {
   padding-top: 250px;
 }
 
@@ -69,4 +69,12 @@ a {
   color: white;
   background-color: black;
   border-color: #66CDAA;
+}
+
+.abstand {
+  margin-bottom: 20px;
+}
+
+.abstand2 {
+  margin-top: 50px;
 }

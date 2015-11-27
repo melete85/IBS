@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julia Ackermann">
 
     <title>Julia Ackermann - Wikisuche</title>
 
@@ -26,35 +27,61 @@
   <body data-target=".navbar-fixed-top">
 
     <nav class="navbar navbar-style navbar-fixed-top" role="Navigation">
-      <div class="collapse navbar-collapse navbar-right">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html#top">Startseite</a></li>
-          <li><a href="index.html#ich">Über mich</a></li>
-          <li><a href="index.html#code">Codeacademy</a><li>
-          <li><a href="mistudium.html">Mein Studium</a></li>
-          <li><a href="wikisuche.html">Wikipedia-Suche</a></li>
-          <li><a href="impressum.html">Impressum</a></li>
-        </ul>
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html#top">Startseite</a></li>
+            <li><a href="index.html#ich">Über mich</a></li>
+            <li><a href="index.html#code">Codeacademy</a><li>
+            <li><a href="index.html#pullrequest">Pull-Requests</a><li>
+            <li><a href="mistudium.html">Mein Studium</a></li>
+            <li><a href="wikisuche.html">Wikipedia-Suche</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="container content-section text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h1>Wikipedia-Suche</h1>
-          <a href="http://de.wikipedia.org" target="_blank" name="Wikipedia">
-          <img src="Banner_fuettern_468x60_border.png" alt="Wikipedia. Die freie Enzyklop&aumldie. F&umlttern erbeten" border="0" align="middle" width= 468px height= 60px /></a>
-
-          <form name="search" method="post" action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
-            <div align="left">
-              <input aria-label="Suchfeld" type="text" name="search" placeholder="Suchbegriff" size= 50px />
-              <input class="btn btn-default btn-style" role="button" type="submit" name="go" value="Artikelsuche" />
-              <input class="btn btn-default btn-style" role="button" type="submit" name="fulltext" value="Volltextsuche" />
+    <div class="container content text-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="abstand">
+              <h1>Wikipedia-Suche</h1>
             </div>
-          </form>
+            <div class="abstand">
+              <a href="http://de.wikipedia.org" target="_blank" name="Wikipedia">
+              <img src="img/Banner_fuettern_468x60_border.png" alt="Wikipedia. Die freie Enzyklop&aumldie. F&umlttern erbeten" border="0" align="middle" width= 468px height= 60px /></a>
+            </div>
 
-    <a href="http://wave.webaim.org/report#/juliaa.cloudcontrolled.com/wikisuche.html" title="Explanation of Level Triple-A Conformance">
-    <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AAA" alt="Level Triple-A conformance icon, W3C-WAI Web Content Accessibility Guidelines 1.0"></a>
+            <form name="search" method="post" action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
+              <div align="center">
+                <div class="abstand">
+                  <input autofocus aria-label="Suchfeld" type="text" name="search" placeholder="Suchbegriff" size=50px />
+                </div>
+              </div>
+              <div align="center">
+                <div class="abstand">
+                  <input class="btn btn-default btn-style" role="button" type="submit" name="go" value="Artikelsuche" />
+                  <input class="btn btn-default btn-style" role="button" type="submit" name="fulltext" value="Volltextsuche" />
+                </div>
+              </div>
+            </form>
+
+            <a href="http://wave.webaim.org/report#/juliaa.cloudcontrolled.com/wikisuche.html" title="Test auf Einhaltung des Levels Triple-A für Web Content Accessibility">
+            <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AAA" alt="Level Triple-A conformance icon, W3C-WAI Web Content Accessibility Guidelines 1.0"></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="container content text-center">
+        <p>Copyright &copy Julia Ackermann 2015</p>
+      </div>
+    </footer>
 
   </body>
 </html>

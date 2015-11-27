@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julia Ackermann">
 
     <title>Julia Ackermann</title>
 
@@ -28,30 +29,33 @@
   <body data-target=".navbar-fixed-top">
 
     <nav class="navbar navbar-style navbar-fixed-top" role="Navigation">
-
+      <div class="container-fluid">
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
             <li><a href="index.html#top">Startseite</a></li>
             <li><a href="index.html#ich">Über mich</a></li>
             <li><a href="index.html#code">Codeacademy</a><li>
+            <li><a href="index.html#pullrequest">Pull-Requests</a><li>
             <li><a href="mistudium.html">Mein Studium</a></li>
             <li><a href="wikisuche.html">Wikipedia-Suche</a></li>
             <li><a href="impressum.html">Impressum</a></li>
           </ul>
-
+        </div>
       </div>
     </nav>
 
-    <div class="jumboMI">
-      <div class="text-left">
-        <h1 class="header">Medizinische Informatik</h1>
-        <p class="para">Meine absolvierten Module</p>
+    <div class="container-fluid">
+      <div class="jumboMI">
+        <div class="text-left">
+          <h1 class="header">Medizinische Informatik</h1>
+          <p class="para">Meine absolvierten Module</p>
+        </div>
       </div>
     </div>
 
-    <div class="container marketing content-section">
+    <div class="container marketing content">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <span class="fa fa-ambulance fa-5x"></span>
           <h2>1. Semester</h2>
           <p>Objektorientierte Programmierung</p>
@@ -62,7 +66,7 @@
           <p>Diskrete Mathematik</p>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <span class="fa fa-stethoscope fa-5x"></span>
           <h2>2. Semester</h2>
           <p>Programmierung interaktiver Systeme</p>
@@ -73,7 +77,7 @@
           <p>Stochastik</p>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <span class="fa fa-heartbeat fa-5x"></span>
           <h2>3. Semester</h2>
           <p>Medizintechnik</p>
@@ -86,23 +90,31 @@
       </div>
     </div>
 
-    <div class="container marketing content-section">
-    <div class="row">
-      <div class="col-lg-4">
-        <span class="fa fa-medkit fa-5x"></span>
-        <h2>[aktuell:] 4. Semester</h2>
-        <p>Betriebssysteme und Rechnernetze</p>
-        <p>Softwaretechnik-Projekt</p>
-        <p>Projektmanagement</p>
-      </div>
+    <div class="container marketing abstand2">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="fa fa-medkit fa-5x"></span>
+          <h2>[aktuell:] 4. Semester</h2>
+          <p>Betriebssysteme und Rechnernetze</p>
+          <p>Softwaretechnik-Projekt</p>
+          <p>Projektmanagement</p>
+        </div>
 
-      <div class="col-lg-4">
-        <span class="fa fa-heart-o fa-5x"></span>
-        <h2>Wahlpflichtmodule</h2>
-        <p>Einsatz von RFID im Gesundheitswesen</p>
-        <p>[aktuell:] PACS/IT in der Radiologie</p>
-        <p>[aktuell:] Internetbasierte Systeme</p>
-        <p>[aktuell:] Geschäftsprozessmodellierung und <br>-implementierung am Beispiel SAP</p>
+        <div class="col-md-4">
+          <span class="fa fa-heart-o fa-5x"></span>
+          <h2>Wahlpflichtmodule</h2>
+          <p>Einsatz von RFID im Gesundheitswesen</p>
+          <p>[aktuell:] PACS/IT in der Radiologie</p>
+          <p>[aktuell:] Internetbasierte Systeme</p>
+          <p>[aktuell:] Geschäftsprozessmodellierung und <br>-implementierung am Beispiel SAP</p>
+        </div>
       </div>
     </div>
-</div>
+
+    <footer>
+      <div class="container content text-center">
+        <p>Copyright &copy Julia Ackermann 2015</p>
+      </div>
+    </footer>
+  </body>
+</html>
