@@ -18,6 +18,11 @@ a {
   color: #66CDAA;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #8470FF;
+}
+
 .jumbo {
   display: table;
   width: 100%;
